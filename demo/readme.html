@@ -1,0 +1,112 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link id="light" rel="stylesheet" type="text/css" href="http://huntercmd.github.io/blog/config/css/light.css">
+<link id="dark" rel="stylesheet" type="text/css" href="http://huntercmd.github.io/blog/config/css/dark.css" disabled/>
+
+<script src="http://huntercmd.github.io/blog/config/css/classie.js"></script>
+
+<!-- This is for Mathjax -->
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["$","$"] ],
+			displayMath: [ ['$$','$$'], ["$$","$$"] ],
+			processEscapes: true
+			},
+		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+		"HTML-CSS": {linebreaks: {automatic: true}},
+		SVG: {linebreaks: {automatic: true}}
+	});
+</script>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>LQG</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#markdown文档转本地html及pdf">markdown文档转本地html及pdf</a><ul>
+<li><a href="#安装 markdown 解析器">安装 markdown 解析器</a></li>
+<li><a href="#运行脚本">运行脚本</a></li>
+<li><a href="#使用 wkhtmltopdf 将 html 转为 pdf">使用 wkhtmltopdf 将 html 转为 pdf</a></li>
+<li><a href="#本地化使用">本地化使用</a></li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="markdown文档转本地html及pdf">markdown文档转本地html及pdf</h1>
+<h2 id="安装 markdown 解析器">安装 markdown 解析器</h2>
+<p>找个简单的Python下的markdown解析器 <a href="https://github.com/lepture/mistune">mistune</a>安装:<br>
+<code>$ pip install mistune</code>。</p>
+<h2 id="运行脚本">运行脚本</h2>
+<p>利用 md2html.py 来解析成 html 文档, html 文件名自动生成：<br>
+<code>python md2html.py XX.md YY.md ZZ.md  ...</code></p>
+<p>注意 html 需要一个本地的 css 文件、mathjax 可以本地化（目前还需要网络）、有返回顶部的功能、用到 <a href="http://fontawesome.io/">font-awesome</a> 网络图标（也可本地化）</p>
+<p>默认html中自动生成目录</p>
+<h2 id="使用 wkhtmltopdf 将 html 转为 pdf">使用 wkhtmltopdf 将 html 转为 pdf</h2>
+<p>首先利用上面方法生成 html 文件，然后使用<a href="https://github.com/wkhtmltopdf/wkhtmltopdf">wkhtmltopdf</a>来生成 pdf:<br>
+<code>wkhtmltopdf XX.html  XX.pdf</code></p>
+<p>可以自动生成 pdf 的书签</p>
+<p>注意 生成的 pdf 对 mathjax 公式支持不好</p>
+<h2 id="本地化使用">本地化使用</h2>
+<p>双击 .bat 脚本输入md文件名即可实现转化</p>
+<ul>
+<li>2html_local.bat 转为本地版html</li>
+<li>2html_online.bat 转为网络版html</li>
+<li>2pdf.bat 临时转为本地html再转为pdf,自带书签,没有返回顶部,css字体黑色，无背景色</li>
+</ul>
+<p>作者 <a href="leequangang@gmail.com">Leequangang</a><br>
+2015 年 5月 4日</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='./index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+<div class="theme" >
+<i title='主题' onclick="change_css()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="http://huntercmd.github.io"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>

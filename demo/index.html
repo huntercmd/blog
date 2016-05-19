@@ -1,0 +1,89 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link id="light" rel="stylesheet" type="text/css" href="http://huntercmd.github.io/blog/config/css/light.css">
+<link id="dark" rel="stylesheet" type="text/css" href="http://huntercmd.github.io/blog/config/css/dark.css" disabled/>
+
+<script src="http://huntercmd.github.io/blog/config/css/classie.js"></script>
+
+<!-- This is for Mathjax -->
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["$","$"] ],
+			displayMath: [ ['$$','$$'], ["$$","$$"] ],
+			processEscapes: true
+			},
+		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+		"HTML-CSS": {linebreaks: {automatic: true}},
+		SVG: {linebreaks: {automatic: true}}
+	});
+</script>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>LQG</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#目录">目录</a></li>
+</ul>
+</nav><h1 id="目录">目录</h1>
+<ul>
+<li><a href="./cmder设置.html">cmder设置</a></li>
+<li><a href="./markdown.html">markdown</a></li>
+<li><a href="./readme.html">readme</a></li>
+</ul>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='./index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+<div class="theme" >
+<i title='主题' onclick="change_css()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="http://huntercmd.github.io"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>
