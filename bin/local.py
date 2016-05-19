@@ -56,7 +56,7 @@ html_head = """
 	});
 </script>
 
-<title>LQG</title>
+<title>HunterCmd</title>
 </head>
 
 <body class="cbp-spmenu-push">

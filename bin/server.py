@@ -55,7 +55,7 @@ html_head = """
 </script>
 
 
-<title>LQG</title>
+<title>HunterCmd</title>
 </head>
 
 <body class="cbp-spmenu-push">
@@ -69,7 +69,7 @@ html_head = """
 html_footer = """ 
 
 <div class="home">
-<i title='主页' onclick="location.href='./index.html'"><i class="fa fa-home fa-lg"></i></i>
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
 </div>
 
 <div class="toc">
