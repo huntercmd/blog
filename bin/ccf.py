@@ -101,7 +101,7 @@ html_footer = """
 
   <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
 
-  <p>&copy; 2013 HunterCmd &nbsp <a href="http://huntercmd.github.io"><i class="fa fa-github fa-1x"></i>
+  <p>&copy; 2013 HunterCmd &nbsp <a href="https://github.com/huntercmd/ccf"><i class="fa fa-github fa-1x"></i>
   </p>
 </div>
 
