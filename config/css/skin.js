@@ -34,7 +34,7 @@ document.cookie=c_name+ "=" +escape(value)+
 //----初始调用------
 //不存在cookie则用默认css，存在cookie则用以前css
 window.onload = function() {
-var css_light = "https://rawcdn.githack.com/huntercmd/blog/master/config/css/light.css";
+var css_light = "https://gitcdn.xyz/repo/huntercmd/blog/master/config/css/light.css";
 var cookie = getCookie("mycss");//返回cookie中对应的CSS路径
 var css_link = cookie?cookie:css_light;//cookie是否存在,存在则用cookie的类型,不存在则用默认的css类型
 document.getElementById("cssfile").setAttribute("href",css_link);//定位id="cssfile"修改其href
@@ -44,8 +44,8 @@ document.getElementById("cssfile").setAttribute("href",css_link);//定位id="css
 //功能:点击更换css,并写入cookie,保存
 
 function change_css(){
-var css_light = "https://rawcdn.githack.com/huntercmd/blog/master/config/css/light.css";
-var css_dark = "https://rawcdn.githack.com/huntercmd/blog/master/config/css/dark.css";
+var css_light = "https://gitcdn.xyz/repo/huntercmd/blog/master/config/css/light.css";
+var css_dark = "https://gitcdn.xyz/repo/huntercmd/blog/master/config/css/dark.css";
 var cookie = getCookie("mycss");//传入cookie名，取回cookie中css
 var css_link = cookie?cookie:css_light;//cookie是否存在,存在则用,不存在则用默认的css
 if(css_link == css_light){

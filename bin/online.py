@@ -30,10 +30,10 @@ html_head = """
 <meta name="HunterCmd" charset="utf-8">
 
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-<link id="light" rel="stylesheet" type="text/css" href="https://rawcdn.githack.com/huntercmd/blog/master/config/css/light.css">
-<link id="dark" rel="stylesheet" type="text/css" href="https://rawcdn.githack.com/huntercmd/blog/master/config/css/dark.css" disabled/>
+<link id="light" rel="stylesheet" type="text/css" href="https://gitcdn.xyz/repo/huntercmd/blog/master/config/css/light.css">
+<link id="dark" rel="stylesheet" type="text/css" href="https://gitcdn.xyz/repo/huntercmd/blog/master/config/css/dark.css" disabled/>
 
-<script src="https://rawcdn.githack.com/huntercmd/blog/master/config/css/classie.js"></script>
+<script src="https://gitcdn.xyz/repo/huntercmd/blog/master/config/css/classie.js"></script>
 
 
 <title>LQG</title>

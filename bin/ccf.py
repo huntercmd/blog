@@ -30,9 +30,9 @@ html_head = """
 <meta name="HunterCmd" charset="utf-8">
 
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-<link id="cssfile" rel="stylesheet" type="text/css" href="https://rawcdn.githack.com/huntercmd/blog/master/config/css/light.css">
-<script src="https://rawcdn.githack.com/huntercmd/blog/master/config/css/skin.js"></script>
-<script src="https://rawcdn.githack.com/huntercmd/blog/master/config/css/classie.js"></script>
+<link id="cssfile" rel="stylesheet" type="text/css" href="https://gitcdn.xyz/repo/huntercmd/blog/master/config/css/light.css">
+<script src="https://gitcdn.xyz/repo/huntercmd/blog/master/config/css/skin.js"></script>
+<script src="https://gitcdn.xyz/repo/huntercmd/blog/master/config/css/classie.js"></script>
 
 <!-- This is for Mathjax -->
 
