@@ -5,7 +5,7 @@
 
 用mistune来解析md文件，自带侧边目录，不需要设置[TOC]
 
-python  run_local.py
+python  ccf.py
 
 
 输出：posts文件夹下 index.html、XX.html  YY.html ...
@@ -31,27 +31,8 @@ html_head = """
 
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <link id="cssfile" rel="stylesheet" type="text/css" href="https://rawcdn.githack.com/huntercmd/blog/master/config/css/light.css">
-<script src="https://rawcdn.githack.com/huntercmd/blog/master/config/css/skin.js"></script>
+<script src="https://rawcdn.githack.com/huntercmd/blog/d9beff1/config/css/skin.js"></script>
 <script src="https://rawcdn.githack.com/huntercmd/blog/master/config/css/classie.js"></script>
-
-<!-- This is for Mathjax -->
-
-<script type="text/x-mathjax-config">
-	MathJax.Hub.Config({
-		tex2jax: {
-			inlineMath: [ ['$','$'], ["$","$"] ],
-			displayMath: [ ['$$','$$'], ["$$","$$"] ],
-			processEscapes: true
-			},
-		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
-		"HTML-CSS": {linebreaks: {automatic: true}},
-		SVG: {linebreaks: {automatic: true}}
-	});
-</script>
-
-<script type="text/javascript"
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
 
 
 <title>HunterCmd</title>
