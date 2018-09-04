@@ -1,4 +1,4 @@
-#coding=utf-8  
+#coding=utf-8
 
 """
 网络版css、mathjax、font-awesome，带返回顶部
@@ -25,33 +25,14 @@ top_level = 1
 header_info = []
 
 
-html_head = """ 
+html_head = """
 <head>
 <meta name="HunterCmd" charset="utf-8">
 
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-<link id="cssfile" rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/huntercmd/blog/master/config/css/light.css">
-<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/skin.js"></script>
-<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/classie.js"></script>
-
-<!-- This is for Mathjax -->
-
-<script type="text/x-mathjax-config">
-	MathJax.Hub.Config({
-		tex2jax: {
-			inlineMath: [ ['$','$'], ["$","$"] ],
-			displayMath: [ ['$$','$$'], ["$$","$$"] ],
-			processEscapes: true
-			},
-		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
-		"HTML-CSS": {linebreaks: {automatic: true}},
-		SVG: {linebreaks: {automatic: true}}
-	});
-</script>
-
-<script type="text/javascript"
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
+<link id="cssfile" rel="stylesheet" type="text/css" href="https://rawcdn.githack.com/huntercmd/blog/master/config/css/light.css">
+<script src="https://rawcdn.githack.com/huntercmd/blog/master/config/css/skin.js"></script>
+<script src="https://rawcdn.githack.com/huntercmd/blog/master/config/css/classie.js"></script>
 
 
 <title>HunterCmd</title>
@@ -65,7 +46,7 @@ html_head = """
 """
 
 
-html_footer = """ 
+html_footer = """
 
 <div class="home">
 <i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
@@ -106,7 +87,7 @@ html_footer = """
 </div>
 
 </body>
-""" 
+"""
 
 
 
@@ -149,7 +130,7 @@ def md2html(context_md):
 	return html_head + toc_html +"</nav>"+ context_html + html_footer
 
 
-if __name__=='__main__': 
+if __name__=='__main__':
 
 	mddir = os.getcwd()[:-3]+"src" #去掉路径中 bin，转到 src路径中
 	mdlist = os.listdir(mddir)
